@@ -65,10 +65,22 @@ def jatekos_EgyenloPont_Tobblap_Teszt2():
     else:
         print("Megbukott a teszt!")
 
+def gep_Pontja_Kevesebb_Teszt3():
+    jatekos = [10,2,2,4]
+    gep = [3,7,5]
+
+    kapottE = eredmeny(jatekos, gep, jatekos, gep)
+    vartE = "Nyert"
+
+    if kapottE == vartE:
+        print("Sikeres a teszt!")
+    else:
+        print("Megbukott a teszt!")
+
 def teszt():
-    #jatekos_Nagyobb21_Teszt1()
+    jatekos_Nagyobb21_Teszt1()
     jatekos_EgyenloPont_Tobblap_Teszt2()
-    
+    gep_Pontja_Kevesebb_Teszt3()
 
 
 teszt()
