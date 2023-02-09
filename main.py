@@ -208,6 +208,18 @@ def jatekos_Nagyobb21_Ugyanannyilap_Teszt14():
         print("Sikeres a teszt!")
     else:
         print("Megbukott a teszt!")
+
+def gep_Nagyobb21_Ugyanannyilap_Teszt15():
+    jatekos = [5,6,5]
+    gep = [9,9,9]
+
+    kapottE = eredmeny(jatekos, gep, jatekos, gep)
+    vartE = "Nyert"
+
+    if kapottE == vartE:
+        print("Sikeres a teszt!")
+    else:
+        print("Megbukott a teszt!")
 def teszt():
     jatekos_Nagyobb21_Teszt1()
     jatekos_EgyenloPont_Tobblap_Teszt2()
@@ -223,5 +235,6 @@ def teszt():
     gep_Nyer_Tobblap_Teszt12()
     gep_Nyer_Kevesebblap_Teszt13()
     jatekos_Nagyobb21_Ugyanannyilap_Teszt14()
-
+    gep_Nagyobb21_Ugyanannyilap_Teszt15()
+    
 teszt()
