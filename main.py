@@ -136,6 +136,18 @@ def mindKetto_Veszit_Jatekostobblap_Teszt8():
         print("Sikeres a teszt!")
     else:
         print("Megbukott a teszt!")
+
+def mindKetto_Veszit_Geptobblap_Teszt9():
+    jatekos = [10,13]
+    gep = [11,11,7]
+
+    kapottE = eredmeny(jatekos, gep, jatekos, gep)
+    vartE = "Dontetlen, a kaszino nyert"
+
+    if kapottE == vartE:
+        print("Sikeres a teszt!")
+    else:
+        print("Megbukott a teszt!")
 def teszt():
     jatekos_Nagyobb21_Teszt1()
     jatekos_EgyenloPont_Tobblap_Teszt2()
@@ -145,6 +157,6 @@ def teszt():
     gep_Nagyobb21_Tobblap_Teszt6()
     mindKetto_Veszit_Ugyanannyilap_Teszt7()
     mindKetto_Veszit_Jatekostobblap_Teszt8()
-
+    mindKetto_Veszit_Geptobblap_Teszt9()
 
 teszt()
