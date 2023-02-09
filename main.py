@@ -38,3 +38,22 @@ def lapSzamitas(lapSzam):
     for i in range(len(lapSzam)):
         lap += 1
     return lap
+
+#Tesztek
+
+def jatekos_Nagyobb21_Teszt1():
+    jatekos = [11,2,9]
+    gep = [2,7,5]
+
+    kapottE = eredmeny(jatekos,gep,jatekos,gep)
+    vartE = "Vesztett"
+
+    if kapottE == vartE:
+        print("Sikeres a teszt!")
+    else:
+        print("Megbukott a teszt!")
+
+def teszt():
+    jatekos_Nagyobb21_Teszt1()
+
+teszt()
